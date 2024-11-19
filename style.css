@@ -1,0 +1,247 @@
+/*Reset*/
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+   font-family: Arial,sans-serif;
+}
+
+.logo {
+    width:150px;
+    height: auto;
+    margin-left: 20px;
+}
+
+header {
+    background-color: yellow;
+    padding: 20px;
+}
+ 
+   nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+   }
+
+   nav ul li {
+    nav-right: 20px;
+    }
+
+    nav a {
+        background-color: goldenrod;
+        color: black;
+        padding: 10px 10px;
+        border-radius: 5px;
+        margin-right: 20px;
+        text-decoration: none;
+        border: 2px black solid;
+    }
+
+    .btn-order {
+        background-color: rgb(8, 252, 0);
+        color:black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-left: 20px;
+
+        }
+    
+    /*Hero Section*/
+    #hero {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding: 40px;
+        background-color:papayawhip;
+    }
+
+    .hero-image {
+        width: 500px;
+        max-width: 600px;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .hero-contact {
+        max-width: 800px;
+        font-size: 3rem;
+    }
+
+    .hero-contact h1 {
+        font-size: 4rem;
+    }
+
+    .btn-primary {
+        background-color: rgb(40, 241, 0);
+        color: black;
+        margin-left: 20px;
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration:none ;
+        border: 2px black solid;
+    }
+
+    /*Product Section*/
+    #products h2 {
+        padding: 40px 0 0 40px;
+        background-color: goldenrod;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 40px 0;
+        background-color: yellow;
+        font-size: 20px;
+    }
+
+    .product {
+        text-align: center;
+        max-width: 300px;
+        margin: 20px;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /*Testimonials Section*/
+    #testimonials {
+        background-color: papayawhip;
+        color: black;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .testimonial {
+        margin: 40px;
+        max-width: 700px;
+    }
+
+    .testimonial img {
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    /*Contace Us Section*/
+    #contant {
+        padding: 40px;
+        text-align: center;
+        background-color: gold;
+    }
+
+    form input,
+    form textarea {
+        width: 300%;
+        max-width: 700px;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 0 solid blue;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: rgb(40, 241, 0);
+        color: black;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 2px black solid;
+    }
+
+    /*Footer*/
+    footer {
+        background-color: grey;
+        color: black;
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer p {
+        margin: 10px 0;
+    }
+
+    .social-icons {
+        margin-bottom: 10px;
+    }
+
+    .social-icons a img {
+        width: 30px;
+        margin: 0px;
+    }
+
+    /*Media Querues For Responsiess*/
+    @media (max-width:760px) {
+        nav ul {
+            display: none;
+        }
+
+        nav {
+            flex-direction: column;
+        }
+
+        .btn-order {
+            margin-top: 10px;
+        }
+
+        #hero {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero-image{
+            margin: auto;
+        }
+
+        .hero-contact h1 {
+            font-size: 2rem;
+        }
+
+        .btn-primary {
+            margin-bottom: 10px;
+        }
+
+        #products h2 {
+            text-align: center;
+        }
+
+        .product-list {
+
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .testimonials {
+            margin: auto;
+        }
+
+        form input,
+        form textarea {
+            width: 90;
+        }
+    }
